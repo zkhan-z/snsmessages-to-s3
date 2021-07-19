@@ -12,8 +12,6 @@ def lambda_handler(event, context):
         return 'Event stored'
     except:
         raise
-
-def random_string(event, timestamp):  
    
     def lambda_handler(event, context):
                         
