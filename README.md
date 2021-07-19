@@ -1,9 +1,10 @@
 # snsmessages-to-s3
-Sending Sns messages to s3bucket by creating lambda function
+This repo will help you forward Sns messages to s3bucket for storage and log analysis. For this to work your lambda function needs Sns trigger and once invoked it will redirect these messages and upload them to an s3bucket that you created and output the information in a json format. This is useful when using sns messages you would want to store.
 
-## Create an Sns Topic
-## Create s3Bucket and add permissoin for PutObject permission to allow SnsMessages to be forwarded to your bucket
-## Create a Lambda function and add your code
-## Add trigger to your lambda function pointing to your SnsTopic 
+Steps to execute:
 
-This repo will help you forward Sns notifications to s3bucket for storage. For this to work your lambda function needs Snstopic trigger and once invoked it will redirect these messages and upload them to an s3bucket that you created and output the information in a json format.
+-> Create an Sns Topic.
+-> Create s3Bucket.
+-> Create a Lambda function and add your code. Make sure your Lambda function has the required permissions to execute the code.
+-> Add subscription for Sns Topic.
+-> Add trigger to your lambda function pointing to your SnsTopic.
