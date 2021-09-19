@@ -4,7 +4,7 @@ import uuid
 import boto3
 
 def lambda_handler(event, context):
-    s3bucket = 'Your-Bucket-Name' ## ADD YOUR BUCKET NAME HERE ##
+    s3bucket = 'Your-Bucket-Name' # --> ADD YOUR BUCKET NAME HERE 
     try:
         s3 = boto3.resource('s3')
         s3.Object(s3bucket, str(uuid.uuid4())).put(
